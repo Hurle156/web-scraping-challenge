@@ -42,7 +42,27 @@
         <div class = 'container'>
             <div class = 'row'>
                 <div class = 'col-md-6'>
-                    <h2>{{mars.hemisphere_img.}}</h2>
+                    <h2>{{mars.hemisphere_img.0.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.0.img_urls}}' class = 'col-md-12'>
+                    
+                </div>
+                <div class = 'col-md-6'>
+                    <h2>{{mars.hemisphere_img.1.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.1.img_urls}}' class = 'col-md-12'>
+
+                </div>
+            </div>
+
+            <div class = 'row'>
+                <div class = 'col-md-6'>
+                    <h2>{{mars.hemisphere_img.2.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.2.img_urls}}' class = 'col-md-12'>
+                    
+                </div>
+                <div class = 'col-md-6'>
+                    <h2>{{mars.hemisphere_img.3.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.3.img_urls}}' class = 'col-md-12'>
+
                 </div>
             </div>
         </div>
