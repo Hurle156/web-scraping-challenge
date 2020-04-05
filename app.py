@@ -6,7 +6,7 @@ import scrape_mars
 app = Flask(__name__)
 
 mongo = PyMongo(app, uri = 'mongodb://localhost:27017/mars_app')
-
+mongo.db.collection.drop()
 @app.route('/')
 def home():
     mars_data = mongo.db.collection.find_one()

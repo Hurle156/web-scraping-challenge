@@ -29,7 +29,7 @@
         <div class = 'row'>
         <div class = 'col-md-8'>
             <h1>The Current Featured Image of Mars</h1>
-            <img src = '{{mars.feature_img_url}}' class = 'col-md-11'>
+            <img src = '{{mars.feature_img_url}}' alt = "mars_featured" class = 'col-md-11'>
         </div>
         <div class = 'col-md-4'>
             <h3>The most Recent Tweet from Mars weather. Let's hope it is about the Weather.</h3>
@@ -42,27 +42,27 @@
         <div class = 'container'>
             <div class = 'row'>
                 <div class = 'col-md-6'>
-                    <h2>{{mars.hemisphere_img.0.title}}</h2>
-                    <img src = '{{mars.hemisphere_img.0.img_urls}}' class = 'col-md-12'>
-                    
+                    {%if mars.hemisphere_img %}<h2>{{mars.hemisphere_img.0.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.0.img_urls}}' alt="cerberus" class = 'col-md-12'>
+                    {% endif %}
                 </div>
                 <div class = 'col-md-6'>
-                    <h2>{{mars.hemisphere_img.1.title}}</h2>
-                    <img src = '{{mars.hemisphere_img.1.img_urls}}' class = 'col-md-12'>
-
+                    {%if mars.hemisphere_img %}<h2>{{mars.hemisphere_img.1.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.1.img_urls}}' alt = "schiaparelli" class = 'col-md-12'>
+                    {% endif %}
                 </div>
             </div>
 
             <div class = 'row'>
                 <div class = 'col-md-6'>
-                    <h2>{{mars.hemisphere_img.2.title}}</h2>
-                    <img src = '{{mars.hemisphere_img.2.img_urls}}' class = 'col-md-12'>
-                    
+                    {%if mars.hemisphere_img %}<h2>{{mars.hemisphere_img.2.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.2.img_urls}}' alt = "Sytris Major" class = 'col-md-12'>
+                    {% endif %}
                 </div>
                 <div class = 'col-md-6'>
-                    <h2>{{mars.hemisphere_img.3.title}}</h2>
-                    <img src = '{{mars.hemisphere_img.3.img_urls}}' class = 'col-md-12'>
-
+                    {%if mars.hemisphere_img %}<h2>{{mars.hemisphere_img.3.title}}</h2>
+                    <img src = '{{mars.hemisphere_img.3.img_urls}}' alt = "valles Marineris" class = 'col-md-12'>
+                    {% endif %}
                 </div>
             </div>
         </div>
